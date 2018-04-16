@@ -1,1 +1,6 @@
-docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v /opt/portainer:/data  --restart=always --name container-manage portainer/portainer
+docker run -d \
+       -p 9000:9000 \
+       --restart=always \
+       -v /var/run/docker.sock:/var/run/docker.sock \
+       --name container-manage \
+       portainer/portainer
